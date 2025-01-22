@@ -8,7 +8,12 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        Display: ["Playfair Display", "serif"],
+      },
       colors: {
+        custom: "#0F0F0F",
+        custom2: "#81AD59",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
