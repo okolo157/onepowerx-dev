@@ -12,7 +12,7 @@ export default function Home() {
   ];
 
   const handleMenuToggle = () => {
-    console.log("Menu toggled!");
+    console.log("Menu toggled"); //default
   };
 
   return (
