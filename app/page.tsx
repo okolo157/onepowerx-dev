@@ -11,13 +11,12 @@ export default function Home() {
   ];
 
   const handleMenuToggle = () => {
-    console.log("Menu toggled!");
+    console.log("Menu toggled"); //default
   };
 
   return (
     <div>
       <Navbar links={links} onMenuToggle={handleMenuToggle} />
-
       <div className="items-center bg-custom justify-items-center min-h-screen sm:p-20 font-[family-name:var(--font-geist-sans)]">
         <Header />
       </div>
