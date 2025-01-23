@@ -1,21 +1,24 @@
 "use client";
 
+import Image, { ImageLoader } from "next/image";
 import React from "react";
 
 interface NavbarProps {
   links: { name: string; href: string }[];
-  brandName?: string;
+  brandName?: ImageLoader;
   onMenuToggle?: () => void;
 }
 
 const Navbar: React.FC<NavbarProps> = ({
   links,
-  brandName = "MyApp",
+  // brandName = "MyApp",
   onMenuToggle,
 }) => {
   return (
     <nav className="p-10 text-white flex items-center justify-between">
-      <div className="text-xl font-bold">{brandName}</div>
+      <div className="text-xl font-bold">
+        <Image src="/images/1power.png" alt="app logo" width={180} height={100} className=" -m-6" />
+      </div>
       <button onClick={onMenuToggle} className="sm:hidden">
         ☰
       </button>
@@ -23,7 +26,10 @@ const Navbar: React.FC<NavbarProps> = ({
         <ul className="hidden sm:flex gap-8">
           {links.map((link, index) => (
             <li key={index}>
-              <a href={link.href} className="hover:underline hover:underline-offset-8 hover:text-green-700">
+              <a
+                href={link.href}
+                className="hover:underline hover:underline-offset-8 hover:text-green-700"
+              >
                 {link.name}
               </a>
             </li>
@@ -33,7 +39,7 @@ const Navbar: React.FC<NavbarProps> = ({
       <div className="flex justify-center items-center">
         <button className="border-2 flex justify-between items-center px-4 py-1 border-custom2 hover:border-green-700 rounded-full w-36">
           <svg
-            xmlns="http://www.w3.org/2000/svg"  
+            xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
