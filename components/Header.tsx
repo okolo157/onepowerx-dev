@@ -53,7 +53,7 @@ const Header: React.FC = () => {
 
           {/* Buttons Section */}
           <div className="flex gap-3">
-            <button className="border-2 flex justify-center gap-2 transition-all text-2xl items-center px-6 py-3 border-custom2 ease-in-out rounded-full transform hover:scale-105">
+            <button className="border-2 flex justify-center gap-2 transition-transform text-2xl items-center px-6 py-3 border-custom2 ease-in-out rounded-full transform hover:scale-105">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

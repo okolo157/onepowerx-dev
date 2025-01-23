@@ -17,7 +17,13 @@ const Navbar: React.FC<NavbarProps> = ({
   return (
     <nav className="p-10 text-white flex items-center justify-between">
       <div className="text-xl font-bold">
-        <Image src="/images/1power.png" alt="app logo" width={180} height={100} className=" -m-6" />
+        <Image
+          src="/images/1power.png"
+          alt="app logo"
+          width={180}
+          height={100}
+          className="-m-6"
+        />
       </div>
       <button onClick={onMenuToggle} className="sm:hidden">
         ☰
@@ -37,7 +43,7 @@ const Navbar: React.FC<NavbarProps> = ({
         </ul>
       </div>
       <div className="flex justify-center items-center">
-        <button className="border-2 flex justify-between items-center px-4 py-1 border-custom2 hover:border-green-700 rounded-full w-36">
+        <button className="border-2 flex justify-between items-center px-4 py-1 transition-transform ease-in-out transform hover:scale-105 border-custom2 rounded-full w-36">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
