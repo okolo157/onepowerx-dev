@@ -8,22 +8,22 @@ const reviews = [
   {
     id: 1,
     text: "This service is amazing! It has made my life so much easier.",
-    author: "User A",
+    author: "Mr Jude",
   },
   {
     id: 2,
     text: "I love how secure and convenient the payment process is.",
-    author: "User B",
+    author: "Praise",
   },
   {
     id: 3,
     text: "Excellent customer service and easy to use.",
-    author: "User C",
+    author: "David Ola",
   },
   {
     id: 4,
     text: "Highly recommended! The platform is intuitive and reliable.",
-    author: "User D",
+    author: "Samuel Ade",
   },
 ];
 

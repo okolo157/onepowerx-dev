@@ -7,7 +7,7 @@ export default function Features() {
       <div>
         <h1 className="font-bold text-center text-[50px]">
           We offer
-          <span className="font-Display text-custom2"> tailored Solutions</span>
+          <span className="font-Display text-custom2"> Tailored Solutions</span>
         </h1>
       </div>
       <div className="flex gap-7 p-8 mt-12">
