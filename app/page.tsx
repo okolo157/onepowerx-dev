@@ -1,8 +1,10 @@
 "use client";
 
+import Features from "@/components/Features";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import { Steps } from "@/components/Steps";
+import Reviews from "@/components/Reviews";
 
 export default function Home() {
   const links = [
@@ -22,6 +24,8 @@ export default function Home() {
       <div className="items-center bg-custom justify-items-center min-h-screen sm:p-20 font-[family-name:var(--font-geist-sans)]">
         <Header />
         <Steps />
+        <Features />
+        <Reviews />
       </div>
     </div>
   );

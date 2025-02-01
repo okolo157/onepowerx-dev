@@ -7,16 +7,13 @@ import {
 
 const Header: React.FC = () => {
   return (
-    <div className="relative px-14 overflow-hidden flex">
-      {/* Abstract Shapes (SVG) */}
+    <div className="relative px-14 mt-[-80px] overflow-hidden flex">
       <div className="absolute -top-20 -left-20 w-96 h-96 bg-blue-200 rounded-full opacity-20 z-0"></div>
       <div className="absolute -bottom-20 -right-20 w-96 h-96 bg-purple-200 rounded-full opacity-20 z-0"></div>
 
-      {/* Content */}
       <div className="relative z-10 flex w-full">
-        {/* Left Section */}
-        <div className="text-7xl font-bold flex flex-col align-middle justify-center text-left gap-3 flex-1">
-          <div className="flex">
+        <div className="text-7xl font-bold flex flex-col justify-center text-left gap-3 flex-1">
+          <div className="flex items-center">
             <span className="font-Display font-extrabold italic text-custom2">
               Superfast
             </span>
@@ -25,33 +22,30 @@ const Header: React.FC = () => {
               src="/images/rocket.webp"
               width={70}
               height={80}
+              className="ml-2"
             />
           </div>
           <span>
             and effortless <br /> payments.
           </span>
 
-          {/* Features List */}
-          <div className="items-left">
-            <div className="">
-              <div className="flex flex-col justify-start items-start py-10 text-white text-lg font-thin space-y-4">
-                <div className="flex items-center gap-2">
-                  <LightBulbIcon className="h-7 w-7 text-custom2" />
-                  <span>Quick transactions</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CurrencyDollarIcon className="h-7 w-7 text-custom2" />
-                  <span>Low Fees</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <HandThumbUpIcon className="h-7 w-7 text-custom2" />
-                  <span>Easy to Use</span>
-                </div>
+          <div className="py-10">
+            <div className="flex flex-col justify-start items-start text-white text-lg font-thin space-y-4">
+              <div className="flex items-center gap-2">
+                <LightBulbIcon className="h-7 w-7 text-custom2" />
+                <span>Quick transactions</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CurrencyDollarIcon className="h-7 w-7 text-custom2" />
+                <span>Low Fees</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <HandThumbUpIcon className="h-7 w-7 text-custom2" />
+                <span>Easy to Use</span>
               </div>
             </div>
           </div>
 
-          {/* Buttons Section */}
           <div className="flex gap-3">
             <button className="border-2 flex justify-center gap-2 transition-transform text-2xl items-center px-6 py-3 border-custom2 ease-in-out rounded-full transform hover:scale-105">
               <svg
@@ -60,7 +54,7 @@ const Header: React.FC = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="size-4"
+                className="h-6 w-6"
               >
                 <path
                   strokeLinecap="round"
@@ -70,14 +64,14 @@ const Header: React.FC = () => {
               </svg>
               Get Started
             </button>
-            <button className="border-2 flex justify-center transform hover:scale-105 gap-2  ease-in-out transition-all text-2xl items-center px-6 py-3 border-custom2 rounded-full">
+            <button className="border-2 flex justify-center transform hover:scale-105 gap-2 ease-in-out transition-all text-2xl items-center px-6 py-3 border-custom2 rounded-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="size-6"
+                className="h-6 w-6"
               >
                 <path
                   strokeLinecap="round"
@@ -90,9 +84,8 @@ const Header: React.FC = () => {
           </div>
         </div>
 
-        {/* Right Section */}
         <div className="flex-1 flex align-start py-10 justify-end">
-          <div className="">
+          <div>
             <Image
               width={290}
               height={100}
