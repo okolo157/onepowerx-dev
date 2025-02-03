@@ -1,19 +1,17 @@
 "use client";
 
-import Image, { ImageLoader } from "next/image";
 import React from "react";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 interface NavbarProps {
   links: { name: string; href: string }[];
-  brandName?: ImageLoader;
   onMenuToggle?: () => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({
-  links,
-  // brandName = "MyApp",
-  onMenuToggle,
-}) => {
+const Navbar: React.FC<NavbarProps> = ({ links, onMenuToggle }) => {
+  const router = useRouter();
+
   return (
     <nav className="p-10 text-white flex items-center justify-between">
       <div className="text-xl font-bold">
@@ -22,12 +20,13 @@ const Navbar: React.FC<NavbarProps> = ({
           alt="app logo"
           width={180}
           height={100}
-          className="-m-6"
         />
       </div>
+
       <button onClick={onMenuToggle} className="sm:hidden">
         ☰
       </button>
+
       <div className="flex-1 flex font-bold justify-center">
         <ul className="hidden sm:flex gap-8">
           {links.map((link, index) => (
@@ -42,8 +41,12 @@ const Navbar: React.FC<NavbarProps> = ({
           ))}
         </ul>
       </div>
+
       <div className="flex justify-center items-center">
-        <button className="border-2 flex justify-between items-center px-4 py-1 transition-transform ease-in-out transform hover:scale-105 border-custom2 rounded-full w-36">
+        <button
+          onClick={() => router.push("/auth/register")} 
+          className="border-2 flex justify-between items-center px-4 py-1 transition-transform ease-in-out transform hover:scale-105 border-custom2 rounded-full w-36"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

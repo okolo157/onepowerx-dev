@@ -45,8 +45,8 @@ export default function Reviews() {
   }, []);
 
   return (
-    <div className="p-12 flex flex-col my-40 items-center justify-center gap-7 relative">
-      <h2 className="font-bold text-4xl text-center text-white mb-8">
+    <div className="p-12 flex flex-col mt-24 items-center justify-center gap-7 relative">
+      <h2 className="font-bold text-[50px] text-center text-white mb-8">
         What Our Users Say About Us
       </h2>
       <div className="w-full max-w-4xl relative">
