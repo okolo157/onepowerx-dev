@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <div>
       <Navbar links={links} onMenuToggle={handleMenuToggle} />
-      <div className="items-center bg-custom justify-items-center min-h-screen sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <div className="items-center bg-custom justify-items-center min-h-screen sm:p-20 lg:p-10 font-[family-name:var(--font-geist-sans)]">
         <Header />
         <Steps />
         <Features />

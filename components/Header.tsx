@@ -7,7 +7,7 @@ import {
 
 const Header: React.FC = () => {
   return (
-    <div className="relative px-14 mt-[-80px] overflow-hidden flex">
+    <div className="relative px-14 overflow-hidden flex">
       <div className="absolute -top-20 -left-20 w-96 h-96 bg-blue-200 rounded-full opacity-20 z-0"></div>
       <div className="absolute -bottom-20 -right-20 w-96 h-96 bg-purple-200 rounded-full opacity-20 z-0"></div>
 
@@ -54,12 +54,12 @@ const Header: React.FC = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="h-6 w-6"
+                className="size-6"
               >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  d="m19.5 4.5-15 15m0 0h11.25m-11.25 0V8.25"
+                  d="m4.5 4.5 15 15m0 0V8.25m0 11.25H8.25"
                 />
               </svg>
               Get Started

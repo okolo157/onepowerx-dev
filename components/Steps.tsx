@@ -50,7 +50,7 @@ export const Steps: React.FC = () => {
         {data.map(({ icon, text, description }, index) => (
           <div
             key={index}
-            className="bg-[#0a0a0a] text-white border  border-transparent rounded-2xl shadow-lg ease-in-out transition-transform transform hover:scale-105 relative p-8 flex flex-col items-center"
+            className="bg-[#161616] text-white border  border-transparent rounded-2xl shadow-lg ease-in-out transition-transform transform hover:scale-105 relative p-8 flex flex-col items-center"
           >
             <FontAwesomeIcon icon={icon} className="text-5xl mb-6" />
             <p className="text-xl font-semibold text-center">{text}</p>

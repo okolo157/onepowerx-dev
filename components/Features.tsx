@@ -27,6 +27,23 @@ export default function Features() {
             Make secure payments from the comfort of your home, and pay your
             Airtime, Data, Electricity, and Cable TV bills.
           </p>
+          <button className="border-2 flex justify-between items-center px-4 py-1 transition-transform ease-in-out transform hover:scale-105 border-custom2 rounded-full w-36">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="size-4"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="m19.5 4.5-15 15m0 0h11.25m-11.25 0V8.25"
+              />
+            </svg>
+            Get Started
+          </button>
         </div>
 
         <div
@@ -39,13 +56,30 @@ export default function Features() {
         >
           <div className="absolute inset-0 bg-black opacity-60 rounded-2xl"></div>
 
-          <h2 className="font-bold text-4xl text-left self-start z-10 w-1/3 text-white">
+          <h2 className="font-bold text-4xl text-left self-start z-10 w-2/3 text-white">
             Pay bills and earn returns
           </h2>
-          <p className="z-10  text-white  text-xl">
+          <p className="z-10  text-white text-xl">
             With onepower, bill payment is a stress free endeavour, watch your
             returns grow into sizeable savings{" "}
           </p>
+          <button className="border-2 flex justify-between items-center px-4 py-1 transition-transform ease-in-out transform hover:scale-105 border-custom2 rounded-full w-36">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="size-4"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="m19.5 4.5-15 15m0 0h11.25m-11.25 0V8.25"
+              />
+            </svg>
+            Get Started
+          </button>
         </div>
       </div>
       <div className="flex gap-7 p-8">
