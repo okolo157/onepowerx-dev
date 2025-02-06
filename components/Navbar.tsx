@@ -13,12 +13,12 @@ const Navbar: React.FC<NavbarProps> = ({ links, onMenuToggle }) => {
   const router = useRouter();
 
   return (
-    <nav className="p-10 text-white flex items-center justify-between">
+    <nav className="px-10 text-white flex items-center justify-between">
       <div className="text-xl font-bold">
         <Image
           src="/images/1power.png"
           alt="app logo"
-          width={180}
+          width={120}
           height={100}
         />
       </div>
