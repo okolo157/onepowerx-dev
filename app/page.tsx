@@ -7,6 +7,7 @@ import { Steps } from "@/components/Steps";
 import Reviews from "@/components/Reviews";
 import Footer from "@/components/Footer";
 
+
 export default function Home() {
   const links = [
     { name: "Home", href: "/" },
