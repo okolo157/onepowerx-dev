@@ -19,7 +19,7 @@ export const authOptions: NextAuthOptions = {
           });
 
           const data = await res.json();
-          console.log("API Response:", data); // ✅ Log response
+          console.log("API Response:", data);
 
           if (!res.ok || !data?.token) {
             throw new Error(
