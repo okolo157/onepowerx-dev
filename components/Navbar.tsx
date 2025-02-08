@@ -16,10 +16,12 @@ const Navbar: React.FC<NavbarProps> = ({ links, onMenuToggle }) => {
     <nav className="px-10 text-white flex items-center justify-between">
       <div className="text-xl font-bold">
         <Image
-          src="/images/1plogonew.png"
+          src="/images/1plogonew.webp"
           alt="app logo"
           width={120}
           height={100}
+          className="cursor-pointer"
+          onClick={() => router.push("/")}
         />
       </div>
 
@@ -33,7 +35,7 @@ const Navbar: React.FC<NavbarProps> = ({ links, onMenuToggle }) => {
             <li key={index}>
               <a
                 href={link.href}
-                className="hover:underline hover:underline-offset-8 hover:text-green-700"
+                className="hover:underline hover:underline-offset-8 hover:text-green-700 ease-in-out transition-colors"
               >
                 {link.name}
               </a>
@@ -44,7 +46,7 @@ const Navbar: React.FC<NavbarProps> = ({ links, onMenuToggle }) => {
 
       <div className="flex justify-center items-center">
         <button
-          onClick={() => router.push("/auth/register")} 
+          onClick={() => router.push("/auth/register")}
           className="border-2 flex justify-between items-center px-4 py-1 transition-transform ease-in-out transform hover:scale-105 border-custom2 rounded-full w-36"
         >
           <svg

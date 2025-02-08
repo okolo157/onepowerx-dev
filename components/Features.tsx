@@ -14,7 +14,7 @@ export default function Features() {
         <div
           className="p-12 rounded-2xl bg-[#0a0a0a] flex items-left justify-center flex-col flex-[50%] gap-7 relative"
           style={{
-            backgroundImage: "url(/images/payingbills.jpg)",
+            backgroundImage: "url(/images/payingbills.webp)",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -49,7 +49,7 @@ export default function Features() {
         <div
           className="flex-[50%] p-10 rounded-2xl bg-[#0a0a0a] flex items-left justify-center flex-col gap-10 relative "
           style={{
-            backgroundImage: "url(/images/savings.jpg)",
+            backgroundImage: "url(/images/savings.webp)",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -91,7 +91,7 @@ export default function Features() {
             Credit your wallet with accumulated funds from your savings platform
           </p>
           <Image
-            src="/images/chart.png"
+            src="/images/chart.webp"
             alt="one power chart"
             width={1000}
             height={200}
