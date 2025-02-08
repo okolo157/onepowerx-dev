@@ -16,7 +16,7 @@ const Navbar: React.FC<NavbarProps> = ({ links, onMenuToggle }) => {
     <nav className="px-10 text-white flex items-center justify-between">
       <div className="text-xl font-bold">
         <Image
-          src="/images/1power.png"
+          src="/images/1plogonew.png"
           alt="app logo"
           width={120}
           height={100}
